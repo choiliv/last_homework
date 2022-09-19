@@ -1,0 +1,49 @@
+@import "component/alram.css";
+@import "component/dot.css";
+@import "component/header.css";
+@import "component/nav.css";
+@import "component/nomobile.css";
+@import "css/animation.css";
+@import "css/friends.css";
+@import "css/chat.css";
+@import "css/chatting.css";
+@import "css/find.css";
+@import "css/login.css";
+@import "css/more.css";
+@import "css/reset.css";
+
+
+body {
+    box-sizing: border-box;
+    background-color:antiquewhite;
+    height: 500vh;
+}
+
+
+#no-mobile,
+#no-landscape {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    background-color:rgb(255, 185, 8);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    top: 0;
+
+}
+
+@media screen and (max-width:650px) {
+    #no-mobile {  
+    display: none;
+}
+}
+
+
+@media screen and (orientation: portrait) {
+    #no-landscape {
+        display: none;
+    }
+}

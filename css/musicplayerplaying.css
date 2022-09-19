@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Ubuntu:wght@700&display=swap');
+@import "css/reset.css";
+
+:root {
+--shadow-color: 0 5px 8px rgb(210, 236, 246);
+--font-color: rgba(0,0,0,0.3);
+--name-color: rgba(0,0,0,0.8);
+}
+
+.playing__music-info {
+    margin-bottom:20px;
+}
+
+.playing__singer-img {
+    width: 180px;
+    height: 230px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px 3px rgb(114, 13, 0);
+    margin-bottom: 50px;
+}
+
+.playing__music-name {
+    margin-bottom: 20px;
+    font-size: large;
+    color: var(--name-color);
+}
+
+.playing__singer-name {
+    color: var(--font-color); 
+    font-size: small;
+}
+
+
+.playing__music-bar {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     position: relative;
+}
+
+.music-bar__time span:first-child {
+    position:absolute;
+    left: 30px;
+    top:-20px;
+    font-size: 13px;
+    color: var(--font-color);
+}
+
+.music-bar__time span:last-child{
+        position:absolute;
+        right: 30px;
+        top:-20px;
+        font-size: 13px;
+        color: var(--font-color);
+}
+
+
+.music-bar__range{
+    width: 250px;
+    height: 5px;
+    accent-color: rgb(189, 229, 254);
+    box-shadow: 0 5px 10px var(--font-color);
+    opacity: 0.5;
+}
+
+
+.playing__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:70px 20px;
+}
+
+.playing__btn-icons {
+     display: flex;
+     border: none;
+     background-color: white;
+     font-size: 20px;
+     justify-content: center;
+     align-items: center;
+}
+
+.btn-icons__play {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(189, 229, 254);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 5px 3px rgb(210, 236, 246);
+}
+.btn-icons__play .fa-play  {
+    color: white;
+}
+
+.playing__btn .playing__btn-icons:first-child,
+.playing__btn .playing__btn-icons:last-child {
+    color: var(--font-color);
+}
+
+.playing__btn .playing__btn-icons:nth-child(2),
+.playing__btn .playing__btn-icons:nth-child(4) {
+    color: rgba(0,0,0,0.6);
+
+}

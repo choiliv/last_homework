@@ -1,0 +1,57 @@
+
+@import "css/reset.css";
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.header__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__service i,
+.header__icons-icon {
+    margin-left: 6px;
+    
+}
+
+.header__icons{
+    font-size: 20px;
+    position:relative;
+}
+
+.header__icons-icon:last-child{
+    font-size: small;
+}
+
+.hedaer__icons-new {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background-color: red;
+        color: white;
+        font-size: 5px;
+        font-weight: 600;
+        position: absolute;
+        top: -3px;
+        left: 18px;
+    }
+
+
+    .fa-gear{
+       transition: transform 3s ease-in-out;
+    }
+
+    .fa-gear:hover {
+        
+        transform: rotateZ(360deg);
+        
+    }

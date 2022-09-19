@@ -1,0 +1,48 @@
+@import "css/reset.css";
+
+.nav {
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    background-color: #f9f9fa;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(121, 121, 121, 0.3);
+    margin-left: -10px;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    list-style:none;
+}
+.nav__btn {
+    position: relative;
+}
+
+.nav__img {
+    width: 70px;
+    height: 70px;
+}
+
+.nav__a{
+    position: relative;
+}
+
+.nav__alarm {
+    position: absolute;
+    top: 2px;
+    left: 30px;
+    animation: bounceAlarm 2s ease-in-out;
+    
+}
+
+
+@keyframes bounceAlarm {
+    from {
+        transform: rotateY(0);
+
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}

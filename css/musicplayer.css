@@ -1,0 +1,239 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&family=Ubuntu:wght@700&display=swap');
+@import "css/reset.css";
+
+
+:root {
+--shadow-color: 0 5px 8px rgb(210, 236, 246);
+--font-color: rgba(0,0,0,0.3);
+--name-color: rgba(0,0,0,0.8);
+}
+
+body {
+    background-color: rgb(193, 239, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.list {
+    position: relative;
+}
+
+.list,
+.playing {   
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    height: 650px;
+    margin: 0 20px;
+    box-shadow: 0 10px 10px var(--font-color);
+}
+
+
+.list__header, .playing__header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20px;
+       color: var(--font-color);
+}
+
+.list__singer-info,
+.playing__music-info {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       padding: 30px;
+}
+
+.list__singer-img {
+      display: block;
+      width:70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 10px var(--font-color);
+}
+
+.list__singer-name {
+    font-size: larger;
+    font-weight: 600;
+    color: var(--name-color);
+}
+
+.list__singer-genre {
+    font-size: small;
+    color: var(--font-color);
+    margin-top: 10px;
+}
+
+.list__singer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.singer-btn__shuffle {
+    width: 90px;
+    height: 40px;
+    background-color: rgb(189, 229, 254);
+    border-radius: 35px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    box-shadow: var(--shadow-color);
+    margin-right: 25px;
+    color: white;
+}
+
+.singer-btn__heart {
+    width: 90px;
+    height: 40px;
+    background-color: white;
+    border-radius: 35px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    box-shadow: var(--shadow-color);
+    margin-left: 25;
+}
+
+.fa-heart {
+    margin-right: 5px;
+    color: rgb(255, 212, 219)
+}
+
+.singer-btn__number {
+    color:var(--font-color); 
+}
+
+
+.list__music-list {
+    position:relative;
+    align-items: center;
+    padding: 0;
+    
+}
+.music-list__music {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin: 0 10px -5px 10px;
+
+}
+
+.music-list__music:nth-child(2) {
+    box-shadow: var(--shadow-color);
+ 
+}
+
+.music-list__music:nth-child(2) span {
+    color: var(--name-color);
+}
+
+.music-list__bar {
+    position: relative;
+}
+
+.music__img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.fa-chart-simple {
+    position:absolute;
+    top:10px;
+    left: 15px;
+    color: white;
+}
+
+.music__name {
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    width:150px;
+    left: -10px;
+    
+
+}
+
+.music__name-singer {
+    font-size: 12px;
+    color: var(--font-color);
+}
+
+.music__name-music {
+    font-size: small;
+    color: rgba(0,0,0,0.5);
+}
+
+.list__music-playing {
+    position: absolute;
+    bottom: 15px;
+    left: 5px;
+    background-color:rgb(189, 229, 254);
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 5px 5px 3px rgb(210, 236, 246);
+}
+
+.music-playing__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+
+.playing__name-singer {
+    font-size: 8px;
+    color: var(--font-color);
+    margin-bottom: 3px;
+}
+
+.playing__name-music {
+    font-size: 18px;
+    color:white;
+}
+
+.music__name-dot {
+    color:var(--font-color); 
+}
+
+.music-playing__button {
+    border: none;
+    background-color: rgb(189, 229, 254);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.list__music-playing>.fa-backward-step {
+    position: absolute;
+    right: -8px;
+    top: 13px;
+}
+
+.list__music-playing>.fa-forward-step {
+    position: absolute;
+    left: -8px;
+    top: 13px;
+}
+

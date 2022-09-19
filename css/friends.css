@@ -1,0 +1,136 @@
+@import "component/nomobile.css";
+
+.friends__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friends__header-h1 {
+    font-size: 10px;
+}
+
+.friends__header-icons i {
+    font-size: 17px;
+    margin-left: 8px;
+}
+
+.friends__user {
+    display:flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.friends__user-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.friends__user-name {
+    font-weight: 600;
+}
+
+
+.friends__birth,
+.friends__friends {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 25px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.friends__title{
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 5px;
+}
+
+.friends__info-first,
+.friends__info{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+.friends__info {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-top: 20px;
+}
+
+.friends__birth-icon {
+    position: absolute;
+    bottom: 5px;
+    left: 60px;
+    color: rgb(255, 135, 155);
+    animation: scaleCake 2s ease-in-out;
+}
+
+@keyframes scaleCake {
+    0%{
+    
+    }
+     25%{
+       transform:translateY(-30px);
+    }
+    50% {
+        transform:rotateY(360deg);
+    }
+    100%{
+
+    }
+     
+}
+
+.friends__img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 20px 0 10px;
+}
+
+.friends__name {
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.friends__friends-icon {
+    position: absolute;
+    right: 20px;
+    top: 60px;
+}
+
+
+
+@keyframes hideSplashScreen {
+    from {
+        opacity:1;
+    }
+    to { 
+        opacity:0;
+        visibility: hidden;
+    }
+ }
+ #splash-screen {
+    background-color: rgb(255, 185, 8);
+    position:absolute;
+    height: 100vh; /*100%의미*/
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    animation: hideSplashScreen 3s ease-in-out forwards;
+ }
+
+ .splash-screen__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+ }

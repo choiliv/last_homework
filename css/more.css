@@ -1,0 +1,109 @@
+.more__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more__header-h1 {
+    font-size: 10px;
+}
+
+.more__header-icons {
+    position: relative;
+}
+
+.more__header-icons i {
+    font-size: 17px;
+    margin-left: 8px;
+}
+
+.more__header-dot {
+     top: -5px;
+     left: 80px;
+}
+
+
+.more__wallet {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;   
+    width:420px;
+    height: 110px;
+    background-color: rgb(255, 200, 0);
+    border-radius: 20px;
+
+}
+
+.more__wallet-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more__wallet-title>span {
+    font-size: larger;
+    font-weight: 600;
+}
+
+.more__wallet-balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.wallet-balance {
+    display: flex;
+    align-items: center;
+}
+
+.wallet-balance__img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.wallet-img__font {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.more__wallet-pay {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wallet-pay__font span {
+    margin: 0 6px;
+   
+}
+
+.more__etc {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.more__etc-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.more__etc-icons i {
+    font-size: 35px;
+    margin-bottom: 10px;
+    
+}
+
+.more__etc-icons span {
+    font-size: 10px;
+}
+
+.present__dot{
+    top: -8px;
+    left: 40px;
+}
